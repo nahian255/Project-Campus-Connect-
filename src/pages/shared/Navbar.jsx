@@ -1,11 +1,14 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { BiAlignLeft } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
 // import { HiMenu, HiX } from 'react-icons/hi'; // Example icons from React Icons library
 
 
 const Navbar = () => {
+    const { user } = useContext(AuthContext)
+    console.log(user);
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -18,6 +21,24 @@ const Navbar = () => {
             <li> <Link to='/college' className="text-white hover:text-orange-400">Colleges</Link></li>
             <li> <Link to='/admission' className="text-white hover:text-orange-400">Admission</Link></li>
             <li> <Link to='/my-college' className="text-white hover:text-orange-400">My College</Link></li>
+            {
+                user ? <> <Link to='/profile'><h1 className='text-blue-400'> name{user.displayName}</h1></Link> </> : <>
+                    <li> <Link
+                        to="/register"
+                        className="inline-block px-3 py-1 font-bold text-blue-500 bg-white rounded shadow-md hover:bg-blue-100  focus:outline-none focus:ring focus:ring-offset-2"
+                    >
+                        Register
+                    </Link></li>
+                    <li> <Link
+                        to="/login"
+                        className="inline-block px-3 py-1 font-bold text-blue-500 bg-white rounded shadow-md hover:bg-blue-100  focus:outline-none focus:ring focus:ring-offset-2"
+                    >
+                        Sign in
+                    </Link></li>
+                </>
+            }
+
+
         </>
 
     )
