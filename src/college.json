@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "College A",
+        "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+        "rating": 4.5,
+        "admissionDate": "2023-09-01",
+        "researchCount": 25,
+        "events": [
+            "'Event 1'",
+            "'Event 2'"
+        ],
+        "sportsFacilities": [
+            "Sports Facility 1'",
+            "'Sports Facility 2'"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "College b",
+        "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+        "rating": 4.5,
+        "admissionDate": "2023-09-01",
+        "researchCount": 25,
+        "events": [
+            "'Event 1'",
+            "'Event 2'"
+        ],
+        "sportsFacilities": [
+            "Sports Facility 1'",
+            "'Sports Facility 2'"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "College C",
+        "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+        "rating": 4.5,
+        "admissionDate": "2023-09-01",
+        "researchCount": 25,
+        "events": [
+            "'Event 1'",
+            "'Event 2'"
+        ],
+        "sportsFacilities": [
+            "Sports Facility 1'",
+            "'Sports Facility 2'"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "College D",
+        "image": "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhbXB1c3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+        "rating": 4.5,
+        "admissionDate": "2023-09-01",
+        "researchCount": 25,
+        "events": [
+            "'Event 1'",
+            "'Event 2'"
+        ],
+        "sportsFacilities": [
+            "Sports Facility 1'",
+            "'Sports Facility 2'"
+        ]
+    }
+]

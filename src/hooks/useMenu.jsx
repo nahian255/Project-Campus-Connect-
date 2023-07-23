@@ -6,13 +6,13 @@ import useAxiosSecure from './useAxiosSecure';
 const useMenu = () => {
     const [axiosSecure] = useAxiosSecure()
 
-    const { data: menu = [] } = useQuery({
-        queryKey: ['menu'],
+    const { data: name = [] } = useQuery({
+        queryKey: ['name'],
         queryFn: async () => {
-            const res = await axiosSecure.get('/menu');
+            const res = await axiosSecure.get('/name');
             return res.data
         }
     });
-    return [menu]
+    return [name]
 }
 export default useMenu

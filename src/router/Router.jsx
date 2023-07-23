@@ -9,6 +9,7 @@ import MyCollege from "../pages/myCollege/MyCollege";
 import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import Profile from "../pages/profile/Profile";
+import CollegeDatails from "../pages/home/CollegeDatails";
 
 const router = createBrowserRouter([
     {
@@ -42,6 +43,13 @@ const router = createBrowserRouter([
             {
                 path: 'profile',
                 element: <Profile />
+            },
+            {
+                path: '/details/:id',
+                element: <CollegeDatails></CollegeDatails>,
+                loader: async ({ params }) => {
+                    return fetch(`http://localhost:5000/name/${params.id}`);
+                },
             }
 
         ]

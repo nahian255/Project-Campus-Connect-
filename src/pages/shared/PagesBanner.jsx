@@ -10,8 +10,8 @@ const PagesBanner = ({ image, title, subTitle }) => {
                     //  filter: 'blur(1px)',
                 }}
             >
-                <div className="text-black text-center">
-                    <h1 className="text-4xl font-bold">{title}</h1>
+                <div className="text-blue-700 text-center">
+                    <h1 className="text-9xl font-bold">{title}</h1>
                     <p className="mt-4 text-xl">{subTitle}</p>
                 </div>
             </section>
