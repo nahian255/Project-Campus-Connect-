@@ -12,8 +12,7 @@ const Colleges = () => {
     return (
         <div>
             <PagesBanner image={image} title={'All Colleges'}></PagesBanner>
-            <h1>Colleges</h1>
-            <div className="flex flex-wrap justify-center gap-4 p-4">
+            <div className="flex flex-wrap justify-center gap-4 py-10 p-4">
                 {name.map((college) => (
                     <CollegeCard key={college.id} college={college} />
                 ))}

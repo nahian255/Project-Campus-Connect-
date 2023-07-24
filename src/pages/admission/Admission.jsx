@@ -10,12 +10,12 @@ const Admission = () => {
     // const { collegeName, setCollegeName } = useState('')
 
     const [collegeList, setCollegeList] = useState([
-        { id: 1, name: 'College A' },
-        { id: 2, name: 'College B' },
-        { id: 3, name: 'College C' },
-        { id: 4, name: 'College D' },
-        { id: 5, name: 'College E' },
-        { id: 6, name: 'College F' },
+        { id: 1, name: 'Massachusetts Institute of Technology (MIT)' },
+        { id: 2, name: 'Yale University' },
+        { id: 3, name: 'Princeton University' },
+        { id: 4, name: 'University of Chicago' },
+        { id: 5, name: 'University of Manitoba' },
+        { id: 6, name: 'University of Auckland' },
         // Add more colleges as needed
     ]);
 

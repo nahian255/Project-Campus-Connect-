@@ -4,6 +4,7 @@ import CollegesCard from "./CollegesCard";
 import ImageGallery from "./ImageGallery";
 import ResearchPapers from "./ResearchPaper";
 import Review from "./review/Review";
+import FaqSection from "./faq/Faq";
 
 const Home = () => {
     return (
@@ -26,6 +27,7 @@ const Home = () => {
                     <ImageGallery></ImageGallery>
                     <ResearchPapers />
                     <Review></Review>
+                    <FaqSection />
                 </div>
 
             </div>

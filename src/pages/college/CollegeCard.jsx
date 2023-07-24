@@ -2,6 +2,7 @@
 import { useState } from 'react';
 
 const CollegeCard = ({ college }) => {
+    console.log(college?.events[0]);
 
     // console.log(college);
     const [showDetails, setShowDetails] = useState(false);
@@ -29,13 +30,13 @@ const CollegeCard = ({ college }) => {
                     <div className="mt-4">
                         <h4 className="text-lg font-semibold mb-2">Events:</h4>
                         {/* Render college events here */}
-                        <p>Event 1</p>
-                        <p>Event 2</p>
+                        <p>Event Name : {college?.events[0]?.name}</p>
+                        <p>Event Location : {college?.events[0]?.location}</p>
+                        <p>Event Date : {college?.events[0]?.date}</p>
 
                         <h4 className="text-lg font-semibold mt-4 mb-2">Sports Facilities:</h4>
                         {/* Render sports facilities here */}
-                        <p>Sports Facility 1</p>
-                        <p>Sports Facility 2</p>
+                        <p>Sports Facility : {college?.sportsCategories[0]},{college?.sportsCategories[1]},{college?.sportsCategories[2]},{college?.sportsCategories[3]}</p>
                     </div>
                 )}
             </div>
