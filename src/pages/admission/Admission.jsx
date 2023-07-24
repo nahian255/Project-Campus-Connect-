@@ -46,7 +46,7 @@ const Admission = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setCollegeData(collegeList, candidateData)
-        console.log(candidateData);
+
     };
 
     return (

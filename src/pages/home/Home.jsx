@@ -14,12 +14,12 @@ const Home = () => {
                 <div>
                     <select className="select select-success py-10 w-full max-w-xs">
                         <option disabled selected>Pick your favorite anime</option>
-                        <option>One Piece</option>
-                        <option>Naruto</option>
-                        <option>Death Note</option>
-                        <option>Attack on Titan</option>
-                        <option>Bleach</option>
-                        <option>Fullmetal Alchemist</option>
+                        <option>Massachusetts Institute of Technology (MIT)</option>
+                        <option>Yale University</option>
+                        <option>Princeton University</option>
+                        <option>University of Chicago</option>
+                        <option>University of Manitoba</option>
+                        <option>University of Auckland</option>
                     </select>
                 </div>
                 <div>

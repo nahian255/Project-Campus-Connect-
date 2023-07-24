@@ -22,7 +22,7 @@ const Navbar = () => {
             <li> <Link to='/admission' className="text-white hover:text-orange-400">Admission</Link></li>
             <li> <Link to='/my-college' className="text-white hover:text-orange-400">My College</Link></li>
             {
-                user ? <> <Link to='/profile'><h1 className='text-blue-400'> name{user.displayName}</h1></Link> </> : <>
+                user ? <> <Link to='/profile'><h1 className='text-blue-400'> name : {user.displayName}</h1></Link> </> : <>
                     <li> <Link
                         to="/register"
                         className="inline-block px-3 py-1 font-bold text-blue-500 bg-white rounded shadow-md hover:bg-blue-100  focus:outline-none focus:ring focus:ring-offset-2"

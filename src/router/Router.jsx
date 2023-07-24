@@ -12,6 +12,7 @@ import Profile from "../pages/profile/Profile";
 import CollegeDatails from "../pages/home/CollegeDatails";
 import ResearchPaper1 from "../pages/home/researchPaper/ResearchPaper1";
 import ResearchPaper2 from "../pages/home/researchPaper/ResearchPaper2";
+import NotFound from "../pages/shared/NotFound";
 
 const router = createBrowserRouter([
     {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
         path: '/research-paper-2',
         element: <ResearchPaper2></ResearchPaper2>
     },
+    {
+        path: '*',
+        element: <NotFound />
+    }
 
 
 ]);

@@ -16,7 +16,7 @@ const Profile = () => {
 
 
     return (
-        <div>
+        <div className="py-52 container mx-auto">
             <h1> User deatiles</h1>
             <button onClick={logout}> Sign out </button>
         </div>
