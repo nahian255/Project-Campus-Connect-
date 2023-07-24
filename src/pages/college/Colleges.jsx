@@ -7,7 +7,6 @@ import useMenu from "../../hooks/useMenu";
 const Colleges = () => {
 
     const [name] = useMenu()
-    console.log(name);
 
     return (
         <div>

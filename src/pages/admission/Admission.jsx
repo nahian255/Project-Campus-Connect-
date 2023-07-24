@@ -52,52 +52,53 @@ const Admission = () => {
     return (
         <div >
             <PagesBanner image={image} title={'Sellect College'}></PagesBanner>
-            <div className="container mx-auto mb-20">
-                <h2>Select a College:</h2>
-                <ul className="bg-gray-300">
+            <div className="container mx-auto px-20 mb-20">
+                <h2 className="text-center text-4xl py-10 ">Select Your Favourite College</h2>
+                <ul className=" text-4xl text-bold italic py-10">
                     {collegeList.map((college) => (
-                        <li key={college.id} onClick={() => handleCollegeSelection(college.name)}>
-                            {college.name}
-                        </li>
+                        <>
+                            <li className="text-4xl" key={college.id} onClick={() => handleCollegeSelection(college.name)}>
+                                <button className="btn btn-secondary"># {college.name}</button>
+                            </li>
+                        </>
+
                     ))}
                 </ul>
 
                 {selectedCollege && (
                     <form onSubmit={handleSubmit}>
-                        <h2>Admission Form for {selectedCollege}</h2>
-                        {/* <label>
-                            College Name:
-                            <input type="text" name="collegeName" value={candidateData.collegeName} onChange={handleChange} required />
-                        </label> */}
-                        <label>
-                            Candidate Name:
-                            <input type="text" name="candidateName" value={candidateData.candidateName} onChange={handleChange} required />
+                        <h2 className="text-xl">Admission Form for <span className="text-purple-600 text-4xl mb-8">{selectedCollege}</span> </h2>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2" >
+                            Candidate Name :
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                type="text" name="candidateName" value={candidateData.candidateName} onChange={handleChange} required />
                         </label>
-                        <label>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2">
                             Subject:
-                            <input type="text" name="subject" value={candidateData.subject} onChange={handleChange} required />
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="subject" value={candidateData.subject} onChange={handleChange} required />
                         </label>
-                        <label>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2">
                             Candidate Email:
-                            <input type="email" name="candidateEmail" value={candidateData.candidateEmail} onChange={handleChange} required />
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="candidateEmail" value={candidateData.candidateEmail} onChange={handleChange} required />
                         </label>
-                        <label>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2">
                             Candidate Phone number:
-                            <input type="tel" name="candidatePhone" value={candidateData.candidatePhone} onChange={handleChange} required />
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="tel" name="candidatePhone" value={candidateData.candidatePhone} onChange={handleChange} required />
                         </label>
-                        <label>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2">
                             Address:
-                            <input type="text" name="address" value={candidateData.address} onChange={handleChange} required />
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" name="address" value={candidateData.address} onChange={handleChange} required />
                         </label>
-                        <label>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2">
                             Date of Birth:
-                            <input type="date" name="dateOfBirth" value={candidateData.dateOfBirth} onChange={handleChange} required />
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="date" name="dateOfBirth" value={candidateData.dateOfBirth} onChange={handleChange} required />
                         </label>
-                        <label>
+                        <label className="block text-gray-700 text-xl font-bold  mb-2">
                             Image:
-                            <input type="file" name="image" onChange={handleChange} required />
+                            <input className="appearance-none bg-white border rounded w-1/2 py-3 pl-20 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="file" name="image" onChange={handleChange} required />
                         </label>
-                        <button type="submit">Submit</button>
+
+                        <button className="btn btn-ghost text-purple-500 bg-blue-200" type="submit">Submit</button>
                     </form>
                 )}
             </div>

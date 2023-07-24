@@ -8,7 +8,7 @@ const CollegesCard = () => {
 
     return (
         <div>
-            <h1 className="text-center text-5xl">3 card show</h1>
+            <h1 className="text-center font-bold mb-8 text-5xl">Top Colleges</h1>
             <div className="flex flex-wrap justify-center gap-20 p-4">
                 {newName?.map((college) => (
                     <HomeCard key={college.id} college={college} />
