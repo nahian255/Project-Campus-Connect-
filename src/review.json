@@ -1,0 +1,17 @@
+[
+    {
+        "collegeName": "Massachusetts Institute of Technology (MIT",
+        "reviewText": " MIT is known for its engineering and science programs, and it is a top choice for students who want to pursue a career in these fields. Students at MIT have access to world-class professors, state-of-the-art facilities, and research opportunities. However, MIT is also very challenging, and it can be difficult to succeed academically.",
+        "rating": 5
+    },
+    {
+        "collegeName": "Yale University",
+        "reviewText": "Yale is a well-rounded university that is known for its strong academics, its beautiful campus, and its vibrant extracurricular activities. Students at Yale have the opportunity to study a wide range of subjects, and they also have access to a variety of cultural and social events. However, Yale is also very selective, and it can be difficult to gain admission.",
+        "rating": 4.5
+    },
+    {
+        "collegeName": "Princeton University",
+        "reviewText": " Princeton is a small liberal arts college that is known for its academic excellence and its close-knit community. Students at Princeton have the opportunity to work closely with their professors and to participate in a variety of extracurricular activities. However, Princeton is also very selective, and it can be difficult to gain admission.",
+        "rating": 5
+    }
+]

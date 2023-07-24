@@ -10,6 +10,8 @@ import Register from "../pages/register/Register";
 import Login from "../pages/login/Login";
 import Profile from "../pages/profile/Profile";
 import CollegeDatails from "../pages/home/CollegeDatails";
+import ResearchPaper1 from "../pages/home/researchPaper/ResearchPaper1";
+import ResearchPaper2 from "../pages/home/researchPaper/ResearchPaper2";
 
 const router = createBrowserRouter([
     {
@@ -50,9 +52,16 @@ const router = createBrowserRouter([
                 loader: async ({ params }) => {
                     return fetch(`http://localhost:5000/name/${params.id}`);
                 },
-            }
-
+            },
         ]
+    },
+    {
+        path: '/research-paper-1',
+        element: <ResearchPaper1></ResearchPaper1>
+    },
+    {
+        path: '/research-paper-2',
+        element: <ResearchPaper2></ResearchPaper2>
     },
 
 

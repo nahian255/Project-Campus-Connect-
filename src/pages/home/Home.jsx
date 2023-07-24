@@ -1,6 +1,9 @@
 import PagesBanner from "../shared/PagesBanner";
 import image from "../../assets/college/home.jpg"
 import CollegesCard from "./CollegesCard";
+import ImageGallery from "./ImageGallery";
+import ResearchPapers from "./ResearchPaper";
+import Review from "./review/Review";
 
 const Home = () => {
     return (
@@ -20,6 +23,9 @@ const Home = () => {
                 </div>
                 <div>
                     <CollegesCard></CollegesCard>
+                    <ImageGallery></ImageGallery>
+                    <ResearchPapers />
+                    <Review></Review>
                 </div>
 
             </div>
